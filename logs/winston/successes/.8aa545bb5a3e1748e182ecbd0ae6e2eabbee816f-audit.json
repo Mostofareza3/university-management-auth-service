@@ -1,40 +1,45 @@
 {
-  "keep": {
-    "days": true,
-    "amount": 14
-  },
-  "auditLog": "G:\\University-Management-Application\\auth-management-service\\logs\\winston\\successes\\.8aa545bb5a3e1748e182ecbd0ae6e2eabbee816f-audit.json",
-  "files": [
-    {
-      "date": 1686160709353,
-      "name": "G:\\University-Management-Application\\auth-management-service\\logs\\winston\\successes\\phu-2023-07-06-23-success.log",
-      "hash": "6a1bc41ca43275adf0211b5c9d5e0bb2799060a15a4b2117f5c9a99529dddb15"
+    "keep": {
+        "days": true,
+        "amount": 14
     },
-    {
-      "date": 1686160803328,
-      "name": "G:\\University-Management-Application\\auth-management-service\\logs\\winston\\successes\\phu-2023-08-06-00-success.log",
-      "hash": "78d78772d8c59019a261e3c290c3d541129e1d013b4c43c318f13d661bfdb0c0"
-    },
-    {
-      "date": 1686642223984,
-      "name": "G:\\University-Management-Application\\auth-management-service\\logs\\winston\\successes\\phu-2023-13-06-13-success.log",
-      "hash": "6a42dc7dfafd400f764573d6cbc97ca3e871d514a5907e206a856d8ca8e8bfdc"
-    },
-    {
-      "date": 1686667867392,
-      "name": "G:\\University-Management-Application\\auth-management-service\\logs\\winston\\successes\\phu-2023-13-06-20-success.log",
-      "hash": "fc2c70d1d25d05024bc5d1a4a7bf788599f188bc1fb5e4d303a07d29b8b01a35"
-    },
-    {
-      "date": 1686668437237,
-      "name": "G:\\University-Management-Application\\auth-management-service\\logs\\winston\\successes\\phu-2023-13-06-21-success.log",
-      "hash": "d73c09a90222ebc54fb787faa9a51c49452be48d548c7b1c9e482d813d79c950"
-    },
-    {
-      "date": 1686673891289,
-      "name": "G:\\University-Management-Application\\auth-management-service\\logs\\winston\\successes\\phu-2023-13-06-22-success.log",
-      "hash": "966f34027277fddb1ff0315f585909a12d675f7b6d025c58cbce6ba483f801be"
-    }
-  ],
-  "hashType": "sha256"
+    "auditLog": "G:\\University-Management-Application\\auth-management-service\\logs\\winston\\successes\\.8aa545bb5a3e1748e182ecbd0ae6e2eabbee816f-audit.json",
+    "files": [
+        {
+            "date": 1686160709353,
+            "name": "G:\\University-Management-Application\\auth-management-service\\logs\\winston\\successes\\phu-2023-07-06-23-success.log",
+            "hash": "6a1bc41ca43275adf0211b5c9d5e0bb2799060a15a4b2117f5c9a99529dddb15"
+        },
+        {
+            "date": 1686160803328,
+            "name": "G:\\University-Management-Application\\auth-management-service\\logs\\winston\\successes\\phu-2023-08-06-00-success.log",
+            "hash": "78d78772d8c59019a261e3c290c3d541129e1d013b4c43c318f13d661bfdb0c0"
+        },
+        {
+            "date": 1686642223984,
+            "name": "G:\\University-Management-Application\\auth-management-service\\logs\\winston\\successes\\phu-2023-13-06-13-success.log",
+            "hash": "6a42dc7dfafd400f764573d6cbc97ca3e871d514a5907e206a856d8ca8e8bfdc"
+        },
+        {
+            "date": 1686667867392,
+            "name": "G:\\University-Management-Application\\auth-management-service\\logs\\winston\\successes\\phu-2023-13-06-20-success.log",
+            "hash": "fc2c70d1d25d05024bc5d1a4a7bf788599f188bc1fb5e4d303a07d29b8b01a35"
+        },
+        {
+            "date": 1686668437237,
+            "name": "G:\\University-Management-Application\\auth-management-service\\logs\\winston\\successes\\phu-2023-13-06-21-success.log",
+            "hash": "d73c09a90222ebc54fb787faa9a51c49452be48d548c7b1c9e482d813d79c950"
+        },
+        {
+            "date": 1686673891289,
+            "name": "G:\\University-Management-Application\\auth-management-service\\logs\\winston\\successes\\phu-2023-13-06-22-success.log",
+            "hash": "966f34027277fddb1ff0315f585909a12d675f7b6d025c58cbce6ba483f801be"
+        },
+        {
+            "date": 1686686795757,
+            "name": "G:\\University-Management-Application\\auth-management-service\\logs\\winston\\successes\\phu-2023-14-06-02-success.log",
+            "hash": "81eceabee6d46313fc346380cd96aaacc060daecf67fae6c2e7c5dc8c9238678"
+        }
+    ],
+    "hashType": "sha256"
 }
