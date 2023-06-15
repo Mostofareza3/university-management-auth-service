@@ -1,4 +1,6 @@
 import ApiError from '../../../errors/ApiError'
+import { IGenericResponse } from '../../../interfaces/common'
+import { IPaginationOptionsType } from '../../../interfaces/pagination'
 import { academicSemesterTitleCodeMapper } from './academicSemester.constant'
 import { IAcademicSemester } from './academicSemester.interface'
 import { AcademicSemester } from './academicSemester.model'
@@ -15,12 +17,31 @@ const createSemester = async (
       'Academic semester and title code do not match'
     )
   }
-
   const result = await AcademicSemester.create(payload)
-
   return result
+}
+
+const getAllSemesters = async (
+  paginationOptions: IPaginationOptionsType
+): Promise<IGenericResponse<IAcademicSemester[]>> => {
+  const { page = 1, limit = 10 } = paginationOptions
+  const skip = (page - 1) * limit
+
+  const result = await AcademicSemester.find().sort().skip(skip).limit(limit)
+
+  const total = await AcademicSemester.countDocuments()
+
+  return {
+    meta: {
+      page,
+      limit,
+      total,
+    },
+    data: result,
+  }
 }
 
 export const AcademicSemesterService = {
   createSemester,
+  getAllSemesters,
 }
