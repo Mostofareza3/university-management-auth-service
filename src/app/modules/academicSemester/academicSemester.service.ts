@@ -1,4 +1,6 @@
+import { SortOrder } from 'mongoose'
 import ApiError from '../../../errors/ApiError'
+import { paginationHelper } from '../../../helpers/paginationHelper'
 import { IGenericResponse } from '../../../interfaces/common'
 import { IPaginationOptionsType } from '../../../interfaces/pagination'
 import { academicSemesterTitleCodeMapper } from './academicSemester.constant'
@@ -24,10 +26,20 @@ const createSemester = async (
 const getAllSemesters = async (
   paginationOptions: IPaginationOptionsType
 ): Promise<IGenericResponse<IAcademicSemester[]>> => {
-  const { page = 1, limit = 10 } = paginationOptions
-  const skip = (page - 1) * limit
+  //calculate pagination
+  const { page, skip, limit, sortBy, sortOrder } =
+    paginationHelper.calculatePagination(paginationOptions)
 
-  const result = await AcademicSemester.find().sort().skip(skip).limit(limit)
+  const sortConditions: { [key: string]: SortOrder } = {}
+  if (sortBy && sortOrder) {
+    sortConditions[sortBy] = sortOrder
+  }
+
+  const result = await AcademicSemester.find()
+    .sort(sortConditions)
+    .skip(skip)
+
+    .limit(limit)
 
   const total = await AcademicSemester.countDocuments()
 
