@@ -1,0 +1,15 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 14
+    },
+    "auditLog": "G:\\NoSqlBackend-git\\university-management-auth-service\\logs\\winston\\errors\\.fa399bd41f21a15da8c7387c8d1ffd879a65f8a5-audit.json",
+    "files": [
+        {
+            "date": 1686848563577,
+            "name": "G:\\NoSqlBackend-git\\university-management-auth-service\\logs\\winston\\errors\\phu-2023-15-06-23-error.log",
+            "hash": "4390342950b15092e912a8e87decb260b83b0174eee454ff203c437e8c0438b9"
+        }
+    ],
+    "hashType": "sha256"
+}

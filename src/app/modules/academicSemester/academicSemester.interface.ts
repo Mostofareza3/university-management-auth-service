@@ -1,6 +1,6 @@
-import { Model } from 'mongoose'
+import { Model } from 'mongoose';
 
-export type IAcademicSemesterMonth =
+export type IAcademicSemesterMonths =
   | 'January'
   | 'February'
   | 'March'
@@ -12,18 +12,22 @@ export type IAcademicSemesterMonth =
   | 'September'
   | 'October'
   | 'November'
-  | 'December'
+  | 'December';
 
-export type IAcademicSemesterTitle = 'Autumn' | 'Summer' | 'Fall'
+export type IAcademicSemesterTitles = 'Autumn' | 'Summer' | 'Fall';
 
-export type IAcademicSemesterCode = '01' | '02' | '03'
+export type IAcademicSemesterCodes = '01' | '02' | '03';
 
 export type IAcademicSemester = {
-  title: IAcademicSemesterTitle
-  year: number
-  code: IAcademicSemesterCode
-  startMonth: IAcademicSemesterMonth
-  endMonth: IAcademicSemesterMonth
-}
+  title: IAcademicSemesterTitles;
+  year: string;
+  code: IAcademicSemesterCodes;
+  startMonth: IAcademicSemesterMonths;
+  endMonth: IAcademicSemesterMonths;
+};
 
-export type AcademicSemesterModel = Model<IAcademicSemester>
+export type AcademicSemesterModel = Model<IAcademicSemester>;
+
+export type IAcademicSemesterFilters = {
+  searchTerm?: string;
+};
